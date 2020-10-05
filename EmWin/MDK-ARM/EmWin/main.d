@@ -38,3 +38,4 @@ emwin\main.o: ../Core/Inc/gpio.h
 emwin\main.o: ../Core/Inc/fsmc.h
 emwin\main.o: ..\LCD\ILI93xx.h
 emwin\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+emwin\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
