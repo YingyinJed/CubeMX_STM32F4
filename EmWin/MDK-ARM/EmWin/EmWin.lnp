@@ -33,6 +33,7 @@
 "emwin\gui_x.o"
 "..\STemWin\Lib\STemWin532_CM4_Keil.lib"
 "..\STemWin\Lib\STemWin532_CM4_OS_Keil.lib"
+"emwin\guidrv_template.o"
 --library_type=microlib --strict --scatter "EmWin\EmWin.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

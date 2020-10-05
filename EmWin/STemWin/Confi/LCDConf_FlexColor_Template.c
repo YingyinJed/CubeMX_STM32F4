@@ -53,7 +53,7 @@ Purpose     : Display controller configuration (single layer)
 
 #include "GUI.h"
 #include "GUIDRV_FlexColor.h"
-
+#include "ILI93xx.h"
 /*********************************************************************
 *
 *       Layer configuration (to be modified)
@@ -94,60 +94,6 @@ Purpose     : Display controller configuration (single layer)
 
 /*********************************************************************
 *
-*       Local functions
-*
-**********************************************************************
-*/
-/********************************************************************
-*
-*       LcdWriteReg
-*
-* Function description:
-*   Sets display register
-*/
-static void LcdWriteReg(U16 Data) {
-  // ... TBD by user
-}
-
-/********************************************************************
-*
-*       LcdWriteData
-*
-* Function description:
-*   Writes a value to a display register
-*/
-static void LcdWriteData(U16 Data) {
-  // ... TBD by user
-}
-
-/********************************************************************
-*
-*       LcdWriteDataMultiple
-*
-* Function description:
-*   Writes multiple values to a display register.
-*/
-static void LcdWriteDataMultiple(U16 * pData, int NumItems) {
-  while (NumItems--) {
-    // ... TBD by user
-  }
-}
-
-/********************************************************************
-*
-*       LcdReadDataMultiple
-*
-* Function description:
-*   Reads multiple values from a display register.
-*/
-static void LcdReadDataMultiple(U16 * pData, int NumItems) {
-  while (NumItems--) {
-    // ... TBD by user
-  }
-}
-
-/*********************************************************************
-*
 *       Public functions
 *
 **********************************************************************
@@ -162,31 +108,9 @@ static void LcdReadDataMultiple(U16 * pData, int NumItems) {
 *
 */
 void LCD_X_Config(void) {
-  GUI_DEVICE * pDevice;
-  CONFIG_FLEXCOLOR Config = {0};
-  GUI_PORT_API PortAPI = {0};
-  //
-  // Set display driver and color conversion
-  //
-  pDevice = GUI_DEVICE_CreateAndLink(GUIDRV_FLEXCOLOR, GUICC_565, 0, 0);
-  //
-  // Display driver configuration, required for Lin-driver
-  //
-  LCD_SetSizeEx (0, XSIZE_PHYS , YSIZE_PHYS);
-  LCD_SetVSizeEx(0, VXSIZE_PHYS, VYSIZE_PHYS);
-  //
-  // Orientation
-  //
-  Config.Orientation = GUI_SWAP_XY | GUI_MIRROR_Y;
-  GUIDRV_FlexColor_Config(pDevice, &Config);
-  //
-  // Set controller and operation mode
-  //
-  PortAPI.pfWrite16_A0  = LcdWriteReg;
-  PortAPI.pfWrite16_A1  = LcdWriteData;
-  PortAPI.pfWriteM16_A1 = LcdWriteDataMultiple;
-  PortAPI.pfReadM16_A1  = LcdReadDataMultiple;
-  GUIDRV_FlexColor_SetFunc(pDevice, &PortAPI, GUIDRV_FLEXCOLOR_F66708, GUIDRV_FLEXCOLOR_M16C0B16);
+  GUI_DEVICE_CreateAndLink(&GUIDRV_Template_API,GUICC_M565,0,0);
+	LCD_SetSizeEx(0,lcddev.width,lcddev.height);
+	LCD_SetVSizeEx(0,lcddev.width,lcddev.height);
 }
 
 /*********************************************************************

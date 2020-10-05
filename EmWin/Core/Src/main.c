@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "ILI93xx.h"	//引用LCD的头文件
+#include "GUI.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,7 +60,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 //宏定义SRAM的映射地址以及SRAM的大小
 #define EXT_SRAM_ADDR  	    ((uint32_t)0x68000000)
-#define EXT_SRAM_SIZE		(1 * 1024 * 1024)
+#define EXT_SRAM_SIZE				(1 * 1024 * 1024)
 uint32_t bsp_TestExtSRAM(void);	//这个是SRAM的测试函数
 /* 绝对定位方式访问 SDRAM,这种方式必须定义成全局变量 */
 uint8_t testValue __attribute__((at(EXT_SRAM_ADDR)));
@@ -117,18 +118,13 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	TFTLCD_Init();	//初始化LCD,这个必须放在FSMC
-	LCD_Clear(RED);
-	//以下是测试SRAM配置
-	printf("STM32F407ZG FSMC SRAM Test By Mculover666\r\n");
-  if (bsp_TestExtSRAM() == 0) {
-      printf("SRAM Test success\r\n");
-  } else {
-      printf("SRAM Test fail\r\n");
-  }
-	/* 操作在SRAM的变量 */
-testValue = 0x5a;
-printf("testValue is %#x\r\n", testValue);
-
+	
+	GUI_Init();	//STemWin初始化
+	GUI_SetBkColor(GUI_BLUE);//设置背景颜色
+	GUI_SetColor(GUI_RED);//设置描点颜色
+	GUI_SetFont(&GUI_Font24_ASCII);//设置字体
+	GUI_Clear();//清屏
+	GUI_DispStringAt("Great Success!",0,0);
   /* USER CODE END 2 */
 
   /* Infinite loop */

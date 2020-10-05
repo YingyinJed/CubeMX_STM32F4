@@ -38,4 +38,11 @@ emwin\main.o: ../Core/Inc/gpio.h
 emwin\main.o: ../Core/Inc/fsmc.h
 emwin\main.o: ..\LCD\ILI93xx.h
 emwin\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+emwin\main.o: ..\STemWin\Include\GUI.h
+emwin\main.o: ..\STemWin\Include\GUI_ConfDefaults.h
+emwin\main.o: ..\STemWin\Confi\GUIConf.h
+emwin\main.o: ..\STemWin\Include\GUI_Type.h
+emwin\main.o: ..\STemWin\Include\LCD.h
+emwin\main.o: ..\STemWin\Include\Global.h
+emwin\main.o: ..\STemWin\Include\GUI_Version.h
 emwin\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
