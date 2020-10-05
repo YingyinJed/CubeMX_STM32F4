@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\LCD</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\LCD;..\STemWin\Confi;..\STemWin\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -547,6 +547,36 @@
               <FileName>ILI93xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\LCD\ILI93xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STemWin</GroupName>
+          <Files>
+            <File>
+              <FileName>GUIConf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin\Confi\GUIConf.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCDConf_FlexColor_Template.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin\Confi\LCDConf_FlexColor_Template.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUI_X.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin\GUI_X\GUI_X.c</FilePath>
+            </File>
+            <File>
+              <FileName>STemWin532_CM4_Keil.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\STemWin\Lib\STemWin532_CM4_Keil.lib</FilePath>
+            </File>
+            <File>
+              <FileName>STemWin532_CM4_OS_Keil.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\STemWin\Lib\STemWin532_CM4_OS_Keil.lib</FilePath>
             </File>
           </Files>
         </Group>

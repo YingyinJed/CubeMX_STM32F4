@@ -28,6 +28,11 @@
 "emwin\stm32f4xx_hal_uart.o"
 "emwin\system_stm32f4xx.o"
 "emwin\ili93xx.o"
+"emwin\guiconf.o"
+"emwin\lcdconf_flexcolor_template.o"
+"emwin\gui_x.o"
+"..\STemWin\Lib\STemWin532_CM4_Keil.lib"
+"..\STemWin\Lib\STemWin532_CM4_OS_Keil.lib"
 --library_type=microlib --strict --scatter "EmWin\EmWin.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
