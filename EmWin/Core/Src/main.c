@@ -20,6 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "crc.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 #include "fsmc.h"
@@ -116,6 +117,7 @@ int main(void)
   MX_CRC_Init();
   MX_FSMC_Init();
   MX_USART1_UART_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
 	TFTLCD_Init();	//初始化LCD,这个必须放在FSMC
 	

@@ -40,5 +40,7 @@ emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4x
 emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h
 emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 emwin\lcdconf_flexcolor_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

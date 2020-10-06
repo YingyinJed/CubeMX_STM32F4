@@ -31,8 +31,11 @@ emwin\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h
 emwin\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h
 emwin\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 emwin\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+emwin\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+emwin\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 emwin\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 emwin\main.o: ../Core/Inc/crc.h
+emwin\main.o: ../Core/Inc/tim.h
 emwin\main.o: ../Core/Inc/usart.h
 emwin\main.o: ../Core/Inc/gpio.h
 emwin\main.o: ../Core/Inc/fsmc.h

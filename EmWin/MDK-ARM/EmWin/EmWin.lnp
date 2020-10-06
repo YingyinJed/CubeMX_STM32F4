@@ -4,6 +4,7 @@
 "emwin\gpio.o"
 "emwin\crc.o"
 "emwin\fsmc.o"
+"emwin\tim.o"
 "emwin\usart.o"
 "emwin\stm32f4xx_it.o"
 "emwin\stm32f4xx_hal_msp.o"
@@ -34,6 +35,14 @@
 "..\STemWin\Lib\STemWin532_CM4_Keil.lib"
 "..\STemWin\Lib\STemWin532_CM4_OS_Keil.lib"
 "emwin\guidrv_template.o"
+"emwin\ctiic.o"
+"emwin\myiic.o"
+"emwin\24cxx.o"
+"emwin\gt9147.o"
+"emwin\ft5206.o"
+"emwin\ott2001a.o"
+"emwin\touch.o"
+"emwin\delay.o"
 --library_type=microlib --strict --scatter "EmWin\EmWin.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

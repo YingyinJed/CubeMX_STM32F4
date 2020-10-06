@@ -32,6 +32,8 @@ emwin\ili93xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h
 emwin\ili93xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h
 emwin\ili93xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 emwin\ili93xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+emwin\ili93xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+emwin\ili93xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 emwin\ili93xx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 emwin\ili93xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 emwin\ili93xx.o: ..\LCD\font.h
