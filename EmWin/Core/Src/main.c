@@ -29,6 +29,9 @@
 /* USER CODE BEGIN Includes */
 #include "ILI93xx.h"	//引用LCD的头文件
 #include "GUI.h"
+
+#include "delay.h"
+#include "touch.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -120,13 +123,16 @@ int main(void)
   MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
 	TFTLCD_Init();	//初始化LCD,这个必须放在FSMC
-	
+	tp_dev.init();				//触摸屏初始化
+	/*
 	GUI_Init();	//STemWin初始化
 	GUI_SetBkColor(GUI_BLUE);//设置背景颜色
 	GUI_SetColor(GUI_RED);//设置描点颜色
 	GUI_SetFont(&GUI_Font24_ASCII);//设置字体
 	GUI_Clear();//清屏
 	GUI_DispStringAt("Great Success!",0,0);
+	*/
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */

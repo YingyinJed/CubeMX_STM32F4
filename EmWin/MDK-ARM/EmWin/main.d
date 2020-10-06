@@ -48,4 +48,15 @@ emwin\main.o: ..\STemWin\Include\GUI_Type.h
 emwin\main.o: ..\STemWin\Include\LCD.h
 emwin\main.o: ..\STemWin\Include\Global.h
 emwin\main.o: ..\STemWin\Include\GUI_Version.h
+emwin\main.o: ..\Delay\delay.h
+emwin\main.o: ..\Touch\touch.h
+emwin\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+emwin\main.o: ..\Touch\24cxx.h
+emwin\main.o: ..\Touch\myiic.h
+emwin\main.o: ..\Touch\ott2001a.h
+emwin\main.o: ..\Touch\touch.h
+emwin\main.o: ..\Touch\ctiic.h
+emwin\main.o: ..\Touch\gt9147.h
+emwin\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+emwin\main.o: ..\Touch\ft5206.h
 emwin\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
