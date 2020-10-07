@@ -179,12 +179,10 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-	HAL_TIM_Base_Start_IT(&htim3);
-	HAL_TIM_Base_Start_IT(&htim4);//启用这两个定时器的中断
-	
 	TFTLCD_Init();	//初始化LCD,这个必须放在FSMC
 	tp_dev.init();				//触摸屏初始化
-	
+	HAL_TIM_Base_Start_IT(&htim3);//这两个中断必须在触摸屏初始化后面
+	HAL_TIM_Base_Start_IT(&htim4);//启用这两个定时器的中断
 	Mytouch_MainTask();
 	
 	

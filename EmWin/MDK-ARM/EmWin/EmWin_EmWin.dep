@@ -1,7 +1,7 @@
 Dependencies for Project 'EmWin', Target 'EmWin': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (startup_stm32f407xx.s)(0x5F7D739C)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 531" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o emwin\startup_stm32f407xx.o --depend emwin\startup_stm32f407xx.d)
-F (../Core/Src/main.c)(0x5F7D765D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\main.o --omf_browse emwin\main.crf --depend emwin\main.d)
+F (startup_stm32f407xx.s)(0x5F7D8A2F)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 531" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o emwin\startup_stm32f407xx.o --depend emwin\startup_stm32f407xx.d)
+F (../Core/Src/main.c)(0x5F7D91A2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\main.o --omf_browse emwin\main.crf --depend emwin\main.d)
 I (../Core/Inc/main.h)(0x5F7D7398)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5F7B19F3)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x5F7D7398)
@@ -37,19 +37,19 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
 I (../Core/Inc/crc.h)(0x5F7D7396)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 I (../Core/Inc/usart.h)(0x5F7D7397)
 I (../Core/Inc/gpio.h)(0x5F7D7395)
 I (../Core/Inc/fsmc.h)(0x5F7D7396)
 I (..\LCD\ILI93xx.h)(0x5F1FF818)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
-I (..\STemWin\Include\GUI.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7C9B45)
-I (..\STemWin\Confi\GUIConf.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Type.h)(0x5F7C9B45)
-I (..\STemWin\Include\LCD.h)(0x5F7C9B45)
-I (..\STemWin\Include\Global.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Version.h)(0x5F7C9B45)
+I (..\STemWin\Include\GUI.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7D9132)
+I (..\STemWin\Confi\GUIConf.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Type.h)(0x5F7D9132)
+I (..\STemWin\Include\LCD.h)(0x5F7D9132)
+I (..\STemWin\Include\Global.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Version.h)(0x5F7D9132)
 I (..\Delay\delay.h)(0x5F7C7E7B)
 I (..\Touch\touch.h)(0x5F7C8B65)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
@@ -169,8 +169,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
-F (../Core/Src/tim.c)(0x5F7D7396)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\tim.o --omf_browse emwin\tim.crf --depend emwin\tim.d)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+F (../Core/Src/tim.c)(0x5F7D9139)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\tim.o --omf_browse emwin\tim.crf --depend emwin\tim.d)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 I (../Core/Inc/main.h)(0x5F7D7398)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5F7B19F3)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x5F7D7398)
@@ -241,7 +241,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
-F (../Core/Src/stm32f4xx_it.c)(0x5F7D7397)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\stm32f4xx_it.o --omf_browse emwin\stm32f4xx_it.crf --depend emwin\stm32f4xx_it.d)
+F (../Core/Src/stm32f4xx_it.c)(0x5F7D9139)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\stm32f4xx_it.o --omf_browse emwin\stm32f4xx_it.crf --depend emwin\stm32f4xx_it.d)
 I (../Core/Inc/main.h)(0x5F7D7398)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5F7B19F3)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x5F7D7398)
@@ -276,7 +276,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
-I (../Core/Inc/stm32f4xx_it.h)(0x5F7D7397)
+I (../Core/Inc/stm32f4xx_it.h)(0x5F7D9139)
 F (../Core/Src/stm32f4xx_hal_msp.c)(0x5F7D7398)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\stm32f4xx_hal_msp.o --omf_browse emwin\stm32f4xx_hal_msp.crf --depend emwin\stm32f4xx_hal_msp.d)
 I (../Core/Inc/main.h)(0x5F7D7398)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5F7B19F3)
@@ -1032,22 +1032,22 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
 I (..\LCD\font.h)(0x574DA4B3)
 I (../Core/Inc/usart.h)(0x5F7D7397)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
-F (..\STemWin\Confi\GUIConf.c)(0x5F7C9B45)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\guiconf.o --omf_browse emwin\guiconf.crf --depend emwin\guiconf.d)
-I (..\STemWin\Include\GUI.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7C9B45)
-I (..\STemWin\Confi\GUIConf.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Type.h)(0x5F7C9B45)
-I (..\STemWin\Include\LCD.h)(0x5F7C9B45)
-I (..\STemWin\Include\Global.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Version.h)(0x5F7C9B45)
-F (..\STemWin\Confi\LCDConf_FlexColor_Template.c)(0x5F7CA062)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\lcdconf_flexcolor_template.o --omf_browse emwin\lcdconf_flexcolor_template.crf --depend emwin\lcdconf_flexcolor_template.d)
-I (..\STemWin\Include\GUI.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7C9B45)
-I (..\STemWin\Confi\GUIConf.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Type.h)(0x5F7C9B45)
-I (..\STemWin\Include\LCD.h)(0x5F7C9B45)
-I (..\STemWin\Include\Global.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Version.h)(0x5F7C9B45)
+F (..\STemWin\Confi\GUIConf.c)(0x5F7D9132)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\guiconf.o --omf_browse emwin\guiconf.crf --depend emwin\guiconf.d)
+I (..\STemWin\Include\GUI.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7D9132)
+I (..\STemWin\Confi\GUIConf.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Type.h)(0x5F7D9132)
+I (..\STemWin\Include\LCD.h)(0x5F7D9132)
+I (..\STemWin\Include\Global.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Version.h)(0x5F7D9132)
+F (..\STemWin\Confi\LCDConf_FlexColor_Template.c)(0x5F7D9139)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\lcdconf_flexcolor_template.o --omf_browse emwin\lcdconf_flexcolor_template.crf --depend emwin\lcdconf_flexcolor_template.d)
+I (..\STemWin\Include\GUI.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7D9132)
+I (..\STemWin\Confi\GUIConf.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Type.h)(0x5F7D9132)
+I (..\STemWin\Include\LCD.h)(0x5F7D9132)
+I (..\STemWin\Include\Global.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Version.h)(0x5F7D9132)
 I (..\LCD\ILI93xx.h)(0x5F1FF818)
 I (../Core/Inc/main.h)(0x5F7D7398)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5F7B19F3)
@@ -1086,7 +1086,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
 I (..\Touch\touch.h)(0x5F7C8B65)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 I (..\Touch\24cxx.h)(0x5F7C81B2)
 I (..\Touch\myiic.h)(0x5F7C7F92)
@@ -1096,24 +1096,24 @@ I (..\Touch\ctiic.h)(0x5F7C7B54)
 I (..\Touch\gt9147.h)(0x5F7C8322)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5EC77604)
 I (..\Touch\ft5206.h)(0x5F7C8801)
-I (..\STemWin\Confi\GUIDRV_Template.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUIDRV_FlexColor.h)(0x5F7C9B45)
-F (..\STemWin\GUI_X\GUI_X.c)(0x5F7C9B45)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\gui_x.o --omf_browse emwin\gui_x.crf --depend emwin\gui_x.d)
-I (..\STemWin\Include\GUI.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7C9B45)
-I (..\STemWin\Confi\GUIConf.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Type.h)(0x5F7C9B45)
-I (..\STemWin\Include\LCD.h)(0x5F7C9B45)
-I (..\STemWin\Include\Global.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Version.h)(0x5F7C9B45)
-F (..\STemWin\Confi\GUI_X_Touch_Analog.c)(0x5F7C9BD4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\gui_x_touch_analog.o --omf_browse emwin\gui_x_touch_analog.crf --depend emwin\gui_x_touch_analog.d)
-I (..\STemWin\Include\GUI.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7C9B45)
-I (..\STemWin\Confi\GUIConf.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Type.h)(0x5F7C9B45)
-I (..\STemWin\Include\LCD.h)(0x5F7C9B45)
-I (..\STemWin\Include\Global.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Version.h)(0x5F7C9B45)
+I (..\STemWin\Confi\GUIDRV_Template.h)(0x5F7D9132)
+I (..\STemWin\Include\GUIDRV_FlexColor.h)(0x5F7D9132)
+F (..\STemWin\GUI_X\GUI_X.c)(0x5F7D9132)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\gui_x.o --omf_browse emwin\gui_x.crf --depend emwin\gui_x.d)
+I (..\STemWin\Include\GUI.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7D9132)
+I (..\STemWin\Confi\GUIConf.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Type.h)(0x5F7D9132)
+I (..\STemWin\Include\LCD.h)(0x5F7D9132)
+I (..\STemWin\Include\Global.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Version.h)(0x5F7D9132)
+F (..\STemWin\Confi\GUI_X_Touch_Analog.c)(0x5F7D9139)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\gui_x_touch_analog.o --omf_browse emwin\gui_x_touch_analog.crf --depend emwin\gui_x_touch_analog.d)
+I (..\STemWin\Include\GUI.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7D9132)
+I (..\STemWin\Confi\GUIConf.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Type.h)(0x5F7D9132)
+I (..\STemWin\Include\LCD.h)(0x5F7D9132)
+I (..\STemWin\Include\Global.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Version.h)(0x5F7D9132)
 I (..\Touch\touch.h)(0x5F7C8B65)
 I (../Core/Inc/main.h)(0x5F7D7398)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5F7B19F3)
@@ -1152,7 +1152,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
 I (..\LCD\ILI93xx.h)(0x5F1FF818)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 I (..\Touch\24cxx.h)(0x5F7C81B2)
 I (..\Touch\myiic.h)(0x5F7C7F92)
@@ -1162,21 +1162,21 @@ I (..\Touch\ctiic.h)(0x5F7C7B54)
 I (..\Touch\gt9147.h)(0x5F7C8322)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5EC77604)
 I (..\Touch\ft5206.h)(0x5F7C8801)
-F (..\STemWin\Confi\GUIDRV_Template.c)(0x5F7C9B45)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\guidrv_template.o --omf_browse emwin\guidrv_template.crf --depend emwin\guidrv_template.d)
+F (..\STemWin\Confi\GUIDRV_Template.c)(0x5F7D9132)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\guidrv_template.o --omf_browse emwin\guidrv_template.crf --depend emwin\guidrv_template.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5EC775FC)
-I (..\STemWin\Include\LCD_Private.h)(0x5F7C9B45)
-I (..\STemWin\Include\LCD_Protected.h)(0x5F7C9B45)
-I (..\STemWin\Include\LCD.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7C9B45)
-I (..\STemWin\Confi\GUIConf.h)(0x5F7C9B45)
-I (..\STemWin\Include\Global.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Type.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Version.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Private.h)(0x5F7C9B45)
-I (..\STemWin\Include\GUI_Debug.h)(0x5F7C9B45)
-I (..\STemWin\Include\WM_GUI.h)(0x5F7C9B45)
-I (..\STemWin\Include\LCD_ConfDefaults.h)(0x5F7C9B45)
+I (..\STemWin\Include\LCD_Private.h)(0x5F7D9132)
+I (..\STemWin\Include\LCD_Protected.h)(0x5F7D9132)
+I (..\STemWin\Include\LCD.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_ConfDefaults.h)(0x5F7D9132)
+I (..\STemWin\Confi\GUIConf.h)(0x5F7D9132)
+I (..\STemWin\Include\Global.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Type.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Version.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Private.h)(0x5F7D9132)
+I (..\STemWin\Include\GUI_Debug.h)(0x5F7D9132)
+I (..\STemWin\Include\WM_GUI.h)(0x5F7D9132)
+I (..\STemWin\Include\LCD_ConfDefaults.h)(0x5F7D9132)
 I (..\LCD\ILI93xx.h)(0x5F1FF818)
 I (../Core/Inc/main.h)(0x5F7D7398)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5F7B19F3)
@@ -1212,8 +1212,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
-F (..\STemWin\Lib\STemWin532_CM4_Keil.lib)(0x5F7C9B45)()
-F (..\STemWin\Lib\STemWin532_CM4_OS_Keil.lib)(0x5F7C9B45)()
+F (..\STemWin\Lib\STemWin532_CM4_Keil.lib)(0x5F7D9133)()
+F (..\STemWin\Lib\STemWin532_CM4_OS_Keil.lib)(0x5F7D9133)()
 F (..\Touch\ctiic.c)(0x5F7C7E5D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\ctiic.o --omf_browse emwin\ctiic.crf --depend emwin\ctiic.d)
 I (..\Touch\ctiic.h)(0x5F7C7B54)
 I (../Core/Inc/main.h)(0x5F7D7398)
@@ -1252,7 +1252,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
 I (../Core/Inc/gpio.h)(0x5F7D7395)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 F (..\Touch\myiic.c)(0x5F7C8129)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\myiic.o --omf_browse emwin\myiic.crf --depend emwin\myiic.d)
 I (..\Touch\myiic.h)(0x5F7C7F92)
 I (../Core/Inc/main.h)(0x5F7D7398)
@@ -1291,7 +1291,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
 I (../Core/Inc/gpio.h)(0x5F7D7395)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 F (..\Touch\24cxx.c)(0x5F7C81C1)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\24cxx.o --omf_browse emwin\24cxx.crf --depend emwin\24cxx.d)
 I (..\Touch\24cxx.h)(0x5F7C81B2)
 I (../Core/Inc/main.h)(0x5F7D7398)
@@ -1331,7 +1331,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
 I (..\Touch\myiic.h)(0x5F7C7F92)
 I (../Core/Inc/gpio.h)(0x5F7D7395)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 F (..\Touch\gt9147.c)(0x5F7C85DB)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\LCD -I ..\Touch -I ..\STemWin\Confi -I ..\STemWin\Include -I ..\Delay-I.\RTE\_EmWin-IC:\Users\11057\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\11057\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o emwin\gt9147.o --omf_browse emwin\gt9147.crf --depend emwin\gt9147.d)
 I (..\Touch\gt9147.h)(0x5F7C8322)
 I (../Core/Inc/main.h)(0x5F7D7398)
@@ -1372,7 +1372,7 @@ I (..\Touch\touch.h)(0x5F7C8B65)
 I (..\LCD\ILI93xx.h)(0x5F1FF818)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 I (..\Touch\24cxx.h)(0x5F7C81B2)
 I (..\Touch\myiic.h)(0x5F7C7F92)
@@ -1421,7 +1421,7 @@ I (..\Touch\touch.h)(0x5F7C8B65)
 I (..\LCD\ILI93xx.h)(0x5F1FF818)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 I (..\Touch\24cxx.h)(0x5F7C81B2)
 I (..\Touch\myiic.h)(0x5F7C7F92)
@@ -1470,7 +1470,7 @@ I (..\Touch\touch.h)(0x5F7C8B65)
 I (..\LCD\ILI93xx.h)(0x5F1FF818)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 I (..\Touch\24cxx.h)(0x5F7C81B2)
 I (..\Touch\myiic.h)(0x5F7C7F92)
@@ -1518,7 +1518,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
 I (..\LCD\ILI93xx.h)(0x5F1FF818)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC775FC)
 I (..\Delay\delay.h)(0x5F7C7E7B)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5EC77604)
 I (..\Touch\24cxx.h)(0x5F7C81B2)
 I (..\Touch\myiic.h)(0x5F7C7F92)
@@ -1564,4 +1564,4 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5F7B19F3)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5F7B19F3)
-I (../Core/Inc/tim.h)(0x5F7D7397)
+I (../Core/Inc/tim.h)(0x5F7D9139)

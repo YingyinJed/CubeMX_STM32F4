@@ -53,11 +53,11 @@ Section Cross References
     main.o(i.main) refers to tim.o(i.MX_TIM7_Init) for MX_TIM7_Init
     main.o(i.main) refers to tim.o(i.MX_TIM3_Init) for MX_TIM3_Init
     main.o(i.main) refers to tim.o(i.MX_TIM4_Init) for MX_TIM4_Init
-    main.o(i.main) refers to stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Start_IT) for HAL_TIM_Base_Start_IT
     main.o(i.main) refers to ili93xx.o(i.TFTLCD_Init) for TFTLCD_Init
+    main.o(i.main) refers to stm32f4xx_hal_tim.o(i.HAL_TIM_Base_Start_IT) for HAL_TIM_Base_Start_IT
     main.o(i.main) refers to main.o(i.Mytouch_MainTask) for Mytouch_MainTask
-    main.o(i.main) refers to tim.o(.bss) for htim3
     main.o(i.main) refers to touch.o(.data) for tp_dev
+    main.o(i.main) refers to tim.o(.bss) for htim3
     gpio.o(i.MX_GPIO_Init) refers to memseta.o(.text) for __aeabi_memclr4
     gpio.o(i.MX_GPIO_Init) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
     gpio.o(i.MX_GPIO_Init) refers to stm32f4xx_hal_gpio.o(i.HAL_GPIO_Init) for HAL_GPIO_Init
