@@ -69,6 +69,9 @@ uint32_t bsp_TestExtSRAM(void);	//这个是SRAM的测试函数
 /* 绝对定位方式访问 SDRAM,这种方式必须定义成全局变量 */
 uint8_t testValue __attribute__((at(EXT_SRAM_ADDR)));
 
+//定时器变量
+extern __IO int32_t OS_TimeMS;
+
 
 //重定向printf到串口1
 #if 1
@@ -86,6 +89,58 @@ int fputc(int ch, FILE *stream)
 }
 #endif
 
+//定时器中断
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*htim)
+{
+	//TIM3
+	if(htim->Instance == TIM3)
+	{
+		OS_TimeMS++;
+	}
+	//TIM4
+	if(htim->Instance == TIM4)
+	{
+		GUI_TOUCH_Exec();
+	}
+}
+
+//GUI触摸屏测试函数
+void Mytouch_MainTask(void)
+{
+	GUI_PID_STATE TouchState;
+	int	xPhys;
+	int yPhys;
+	GUI_Init();
+	GUI_SetFont(&GUI_Font20_ASCII);
+	GUI_CURSOR_Show();
+	GUI_CURSOR_Select(&GUI_CursorCrossL);
+	GUI_SetBkColor(GUI_WHITE);
+	GUI_SetColor(GUI_BLACK);
+	GUI_Clear();
+	GUI_DispString("");
+	while(1)
+	{
+		GUI_TOUCH_GetState(&TouchState);
+		xPhys = GUI_TOUCH_GetxPhys();
+		yPhys = GUI_TOUCH_GetyPhys();
+		GUI_SetColor(GUI_BLUE);
+		GUI_DispStringAt("Analog input:\n",0,40);
+		GUI_GotoY(GUI_GetDispPosY()+2);
+		GUI_DispString("x:");
+		GUI_DispDec(xPhys,4);
+		GUI_DispString(",y:");
+		GUI_DispDec(yPhys,4);
+		GUI_SetColor(GUI_RED);
+		GUI_GotoY(GUI_GetDispPosY()+4);
+		GUI_DispString("\nPosition:\n");
+		GUI_GotoY(GUI_GetDispPosY()+2);
+		GUI_DispString("x:");
+		GUI_DispDec(TouchState.x,4);
+		GUI_DispString(",y:");
+		GUI_DispDec(TouchState.y,4);
+		delay_ms(50);
+	}
+}
 
 /* USER CODE END 0 */
 
@@ -121,17 +176,17 @@ int main(void)
   MX_FSMC_Init();
   MX_USART1_UART_Init();
   MX_TIM7_Init();
+  MX_TIM3_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
+	HAL_TIM_Base_Start_IT(&htim3);
+	HAL_TIM_Base_Start_IT(&htim4);//启用这两个定时器的中断
+	
 	TFTLCD_Init();	//初始化LCD,这个必须放在FSMC
 	tp_dev.init();				//触摸屏初始化
-	/*
-	GUI_Init();	//STemWin初始化
-	GUI_SetBkColor(GUI_BLUE);//设置背景颜色
-	GUI_SetColor(GUI_RED);//设置描点颜色
-	GUI_SetFont(&GUI_Font24_ASCII);//设置字体
-	GUI_Clear();//清屏
-	GUI_DispStringAt("Great Success!",0,0);
-	*/
+	
+	Mytouch_MainTask();
+	
 	
   /* USER CODE END 2 */
 

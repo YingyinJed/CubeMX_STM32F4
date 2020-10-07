@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\LCD;..\Touch;..\STemWin\Confi;..\STemWin\Include;..\Delay</IncludePath>
+              <IncludePath>../Core/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy; ../Drivers/CMSIS/Device/ST/STM32F4xx/Include; ../Drivers/CMSIS/Include; ..\LCD; ..\Touch; ..\STemWin\Confi; ..\STemWin\Include; ..\Delay</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -574,6 +574,16 @@
               <FilePath>..\STemWin\GUI_X\GUI_X.c</FilePath>
             </File>
             <File>
+              <FileName>GUI_X_Touch_Analog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin\Confi\GUI_X_Touch_Analog.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDRV_Template.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STemWin\Confi\GUIDRV_Template.c</FilePath>
+            </File>
+            <File>
               <FileName>STemWin532_CM4_Keil.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\STemWin\Lib\STemWin532_CM4_Keil.lib</FilePath>
@@ -582,11 +592,6 @@
               <FileName>STemWin532_CM4_OS_Keil.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\STemWin\Lib\STemWin532_CM4_OS_Keil.lib</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDRV_Template.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\STemWin\Confi\GUIDRV_Template.c</FilePath>
             </File>
           </Files>
         </Group>

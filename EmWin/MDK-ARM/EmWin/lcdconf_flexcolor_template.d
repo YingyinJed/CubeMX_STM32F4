@@ -6,7 +6,6 @@ emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUI_Type.h
 emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\LCD.h
 emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\Global.h
 emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUI_Version.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUIDRV_FlexColor.h
 emwin\lcdconf_flexcolor_template.o: ..\LCD\ILI93xx.h
 emwin\lcdconf_flexcolor_template.o: ../Core/Inc/main.h
 emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
@@ -44,3 +43,18 @@ emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4x
 emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 emwin\lcdconf_flexcolor_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+emwin\lcdconf_flexcolor_template.o: ..\Touch\touch.h
+emwin\lcdconf_flexcolor_template.o: ..\Delay\delay.h
+emwin\lcdconf_flexcolor_template.o: ../Core/Inc/tim.h
+emwin\lcdconf_flexcolor_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+emwin\lcdconf_flexcolor_template.o: ..\Touch\24cxx.h
+emwin\lcdconf_flexcolor_template.o: ..\Touch\myiic.h
+emwin\lcdconf_flexcolor_template.o: ../Core/Inc/gpio.h
+emwin\lcdconf_flexcolor_template.o: ..\Touch\ott2001a.h
+emwin\lcdconf_flexcolor_template.o: ..\Touch\touch.h
+emwin\lcdconf_flexcolor_template.o: ..\Touch\ctiic.h
+emwin\lcdconf_flexcolor_template.o: ..\Touch\gt9147.h
+emwin\lcdconf_flexcolor_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+emwin\lcdconf_flexcolor_template.o: ..\Touch\ft5206.h
+emwin\lcdconf_flexcolor_template.o: ..\STemWin\Confi\GUIDRV_Template.h
+emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUIDRV_FlexColor.h
