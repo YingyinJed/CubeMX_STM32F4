@@ -1,11 +1,11 @@
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Confi\LCDConf_FlexColor_Template.c
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUI.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUI_ConfDefaults.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Confi\GUIConf.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUI_Type.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\LCD.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\Global.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUI_Version.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\Config\LCDConf_FlexColor_Template.c
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\inc\GUI.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\inc\GUI_ConfDefaults.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\Config\GUIConf.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\inc\GUI_Type.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\inc\LCD.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\inc\Global.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\inc\GUI_Version.h
 emwin\lcdconf_flexcolor_template.o: ..\LCD\ILI93xx.h
 emwin\lcdconf_flexcolor_template.o: ../Core/Inc/main.h
 emwin\lcdconf_flexcolor_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
@@ -56,5 +56,5 @@ emwin\lcdconf_flexcolor_template.o: ..\Touch\ctiic.h
 emwin\lcdconf_flexcolor_template.o: ..\Touch\gt9147.h
 emwin\lcdconf_flexcolor_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 emwin\lcdconf_flexcolor_template.o: ..\Touch\ft5206.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Confi\GUIDRV_Template.h
-emwin\lcdconf_flexcolor_template.o: ..\STemWin\Include\GUIDRV_FlexColor.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\Config\GUIDRV_Template.h
+emwin\lcdconf_flexcolor_template.o: ..\STEMWIN\STemWin\inc\GUIDRV_FlexColor.h

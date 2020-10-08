@@ -27,11 +27,14 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ILI93xx.h"	//引用LCD的头文件
 #include "GUI.h"
+#include "GUIDemo.h"
 
+#include "ILI93xx.h"	//引用LCD的头文件
 #include "delay.h"
 #include "touch.h"
+#include "sram.h"
+#include "malloc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -63,11 +66,11 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 //宏定义SRAM的映射地址以及SRAM的大小
-#define EXT_SRAM_ADDR  	    ((uint32_t)0x68000000)
-#define EXT_SRAM_SIZE				(1 * 1024 * 1024)
-uint32_t bsp_TestExtSRAM(void);	//这个是SRAM的测试函数
-/* 绝对定位方式访问 SDRAM,这种方式必须定义成全局变量 */
-uint8_t testValue __attribute__((at(EXT_SRAM_ADDR)));
+//#define EXT_SRAM_ADDR  	    ((uint32_t)0x68000000)
+//#define EXT_SRAM_SIZE				(1 * 1024 * 1024)
+//uint32_t bsp_TestExtSRAM(void);	//这个是SRAM的测试函数
+///* 绝对定位方式访问 SDRAM,这种方式必须定义成全局变量 */
+//uint8_t testValue __attribute__((at(EXT_SRAM_ADDR)));
 
 //定时器变量
 extern __IO int32_t OS_TimeMS;
@@ -183,7 +186,9 @@ int main(void)
 	tp_dev.init();				//触摸屏初始化
 	HAL_TIM_Base_Start_IT(&htim3);//这两个中断必须在触摸屏初始化后面
 	HAL_TIM_Base_Start_IT(&htim4);//启用这两个定时器的中断
-	Mytouch_MainTask();
+	
+	GUI_Init();
+	GUIDEMO_Main();
 	
 	
   /* USER CODE END 2 */
@@ -251,88 +256,88 @@ void SystemClock_Config(void)
 *	返 回 值: 0 表示测试通过； 大于0表示错误单元的个数。
 *********************************************************************************************************
 */
-uint32_t bsp_TestExtSRAM(void)
-{
-	uint32_t i;
-	uint32_t *pSRAM;
-	uint8_t *pBytes;
-	uint32_t err;
-	const uint8_t ByteBuf[4] = {0x55, 0xA5, 0x5A, 0xAA};
-	
-	/* 写SRAM */
-	pSRAM = (uint32_t *)EXT_SRAM_ADDR;
-	for (i = 0; i < EXT_SRAM_SIZE / 4; i++)
-	{
-		*pSRAM++ = i;
-	}
-	
-	/* 读SRAM */
-	err = 0;
-	pSRAM = (uint32_t *)EXT_SRAM_ADDR;
-	for (i = 0; i < EXT_SRAM_SIZE / 4; i++)
-	{
-		if (*pSRAM++ != i)
-		{
-			err++;
-		}
-	}
-	printf("SDRAM check round 1 error = %d\n", err);
-	if (err > 0)
-	{
-		return (4 * err);
-	}
+//uint32_t bsp_TestExtSRAM(void)
+//{
+//	uint32_t i;
+//	uint32_t *pSRAM;
+//	uint8_t *pBytes;
+//	uint32_t err;
+//	const uint8_t ByteBuf[4] = {0x55, 0xA5, 0x5A, 0xAA};
+//	
+//	/* 写SRAM */
+//	pSRAM = (uint32_t *)EXT_SRAM_ADDR;
+//	for (i = 0; i < EXT_SRAM_SIZE / 4; i++)
+//	{
+//		*pSRAM++ = i;
+//	}
+//	
+//	/* 读SRAM */
+//	err = 0;
+//	pSRAM = (uint32_t *)EXT_SRAM_ADDR;
+//	for (i = 0; i < EXT_SRAM_SIZE / 4; i++)
+//	{
+//		if (*pSRAM++ != i)
+//		{
+//			err++;
+//		}
+//	}
+//	printf("SDRAM check round 1 error = %d\n", err);
+//	if (err > 0)
+//	{
+//		return (4 * err);
+//	}
 
-	#if 1
-	/* 对SRAM 的数据求反并写入 */
-	pSRAM = (uint32_t *)EXT_SRAM_ADDR;
-	for (i = 0; i < EXT_SRAM_SIZE/4; i++)
-	{
-		*pSRAM = ~*pSRAM;
-		pSRAM++;
-	}
+//	#if 1
+//	/* 对SRAM 的数据求反并写入 */
+//	pSRAM = (uint32_t *)EXT_SRAM_ADDR;
+//	for (i = 0; i < EXT_SRAM_SIZE/4; i++)
+//	{
+//		*pSRAM = ~*pSRAM;
+//		pSRAM++;
+//	}
 
-	/* 再次比较SRAM的数据 */
-	err = 0;
-	pSRAM = (uint32_t *)EXT_SRAM_ADDR;
-	for (i = 0; i<EXT_SRAM_SIZE/4;i++)
-	{
-		if (*pSRAM++ != (~i))
-		{
-			err++;
-		}
-	}
+//	/* 再次比较SRAM的数据 */
+//	err = 0;
+//	pSRAM = (uint32_t *)EXT_SRAM_ADDR;
+//	for (i = 0; i<EXT_SRAM_SIZE/4;i++)
+//	{
+//		if (*pSRAM++ != (~i))
+//		{
+//			err++;
+//		}
+//	}
 
-	printf("SDRAM check round 2 error = %d\n", err);
-	if (err>0)
-	{
-	return (4 * err);
-	}
-	#endif
+//	printf("SDRAM check round 2 error = %d\n", err);
+//	if (err>0)
+//	{
+//	return (4 * err);
+//	}
+//	#endif
 
-	/* 测试按字节方式访问, 目的是验证 FSMC_NBL0 、 FSMC_NBL1 口线 */
-	pBytes = (uint8_t *)EXT_SRAM_ADDR;
-	for (i = 0; i < sizeof(ByteBuf); i++)
-	{
-		*pBytes++ = ByteBuf[i];
-	}
+//	/* 测试按字节方式访问, 目的是验证 FSMC_NBL0 、 FSMC_NBL1 口线 */
+//	pBytes = (uint8_t *)EXT_SRAM_ADDR;
+//	for (i = 0; i < sizeof(ByteBuf); i++)
+//	{
+//		*pBytes++ = ByteBuf[i];
+//	}
 
-	/* 比较SRAM的数据 */
-	err = 0;
-	pBytes = (uint8_t *)EXT_SRAM_ADDR;
-	for (i = 0; i < sizeof(ByteBuf); i++)
-	{
-		if (*pBytes++ != ByteBuf[i])
-		{
-			err++;
-		}
-	}
-	printf("SDRAM check round 3 error = %d\n", err);
-	if (err > 0)
-	{
-		return err;
-	}
-	return 0;
-}
+//	/* 比较SRAM的数据 */
+//	err = 0;
+//	pBytes = (uint8_t *)EXT_SRAM_ADDR;
+//	for (i = 0; i < sizeof(ByteBuf); i++)
+//	{
+//		if (*pBytes++ != ByteBuf[i])
+//		{
+//			err++;
+//		}
+//	}
+//	printf("SDRAM check round 3 error = %d\n", err);
+//	if (err > 0)
+//	{
+//		return err;
+//	}
+//	return 0;
+//}
 /* USER CODE END 4 */
 
 /**

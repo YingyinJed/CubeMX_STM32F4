@@ -1,5 +1,10 @@
 emwin\malloc.o: ..\MALLOC\malloc.c
 emwin\malloc.o: ..\MALLOC\malloc.h
+emwin\malloc.o: ../Core/Inc/main.h
+emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+emwin\malloc.o: ../Core/Inc/stm32f4xx_hal_conf.h
+emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 emwin\malloc.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 emwin\malloc.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 emwin\malloc.o: ../Drivers/CMSIS/Include/core_cm4.h
@@ -10,10 +15,6 @@ emwin\malloc.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 emwin\malloc.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 emwin\malloc.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-emwin\malloc.o: ../Core/Inc/stm32f4xx_hal_conf.h
-emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
-emwin\malloc.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 emwin\malloc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
@@ -31,11 +32,6 @@ emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h
 emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h
 emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 emwin\malloc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-emwin\malloc.o: ..\STemWin\Include\GUI.h
-emwin\malloc.o: ..\STemWin\Include\GUI_ConfDefaults.h
-emwin\malloc.o: ..\STemWin\Confi\GUIConf.h
-emwin\malloc.o: ..\STemWin\Include\GUI_Type.h
-emwin\malloc.o: ..\STemWin\Include\LCD.h
-emwin\malloc.o: ..\STemWin\Include\Global.h
-emwin\malloc.o: ..\STemWin\Include\GUI_Version.h

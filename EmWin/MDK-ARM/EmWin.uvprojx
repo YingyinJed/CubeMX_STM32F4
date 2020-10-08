@@ -211,7 +211,7 @@
             <Ra2Chk>0</Ra2Chk>
             <Ra3Chk>0</Ra3Chk>
             <Im1Chk>1</Im1Chk>
-            <Im2Chk>1</Im2Chk>
+            <Im2Chk>0</Im2Chk>
             <OnChipMemories>
               <Ocm1>
                 <Type>0</Type>
@@ -337,9 +337,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER,STM32F407xx</Define>
+              <Define>USE_HAL_DRIVER,STM32F407xx,USE_STDPERIPH_DRIVER,ARM_MATH_CM4,__CC_ARM</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc; ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy; ../Drivers/CMSIS/Device/ST/STM32F4xx/Include; ../Drivers/CMSIS/Include; ..\LCD; ..\Touch; ..\STemWin\Confi; ..\STemWin\Include; ..\Delay</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\LCD;..\Touch;..\Delay;..\SRAM;..\MALLOC;..\STEMWIN\CMSIS\Include;..\STEMWIN\Demo;..\STEMWIN\STemWin\Config;..\STEMWIN\STemWin\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -556,46 +556,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>STemWin</GroupName>
-          <Files>
-            <File>
-              <FileName>GUIConf.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\STemWin\Confi\GUIConf.c</FilePath>
-            </File>
-            <File>
-              <FileName>LCDConf_FlexColor_Template.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\STemWin\Confi\LCDConf_FlexColor_Template.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUI_X.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\STemWin\GUI_X\GUI_X.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUI_X_Touch_Analog.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\STemWin\Confi\GUI_X_Touch_Analog.c</FilePath>
-            </File>
-            <File>
-              <FileName>GUIDRV_Template.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\STemWin\Confi\GUIDRV_Template.c</FilePath>
-            </File>
-            <File>
-              <FileName>STemWin532_CM4_Keil.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\STemWin\Lib\STemWin532_CM4_Keil.lib</FilePath>
-            </File>
-            <File>
-              <FileName>STemWin532_CM4_OS_Keil.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\STemWin\Lib\STemWin532_CM4_OS_Keil.lib</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>Touch</GroupName>
           <Files>
             <File>
@@ -642,6 +602,216 @@
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Delay\delay.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SRAM</GroupName>
+          <Files>
+            <File>
+              <FileName>sram.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\SRAM\sram.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MALLOC</GroupName>
+          <Files>
+            <File>
+              <FileName>malloc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MALLOC\malloc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DSP_Lib</GroupName>
+          <Files>
+            <File>
+              <FileName>arm_cortexM4lf_math.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\STEMWIN\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib</FilePath>
+            </File>
+            <File>
+              <FileName>arm_math.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\STEMWIN\CMSIS\Include\arm_math.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STemWin</GroupName>
+          <Files>
+            <File>
+              <FileName>GUI_X.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\STemWin\OS\GUI_X.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIConf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\STemWin\Config\GUIConf.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDRV_Template.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\STemWin\Config\GUIDRV_Template.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUI_X_Touch_Analog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\STemWin\Config\GUI_X_Touch_Analog.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCDConf_FlexColor_Template.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\STemWin\Config\LCDConf_FlexColor_Template.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STemLib</GroupName>
+          <Files>
+            <File>
+              <FileName>STemWin526_CM4_Keil.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\STEMWIN\STemWin\Lib\STemWin526_CM4_Keil.lib</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>STemDemo</GroupName>
+          <Files>
+            <File>
+              <FileName>GUIDEMO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_AntialiasedText.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_AntialiasedText.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Automotive.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Automotive.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_BarGraph.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_BarGraph.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Bitmap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Bitmap.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_ColorBar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_ColorBar.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Conf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Conf.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Cursor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Cursor.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Fading.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Fading.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Graph.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Graph.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_IconView.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_IconView.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_ImageFlow.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_ImageFlow.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Intro.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Intro.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Listview.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Listview.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_RadialMenu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_RadialMenu.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Resource.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Resource.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Skinning.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Skinning.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Speed.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Speed.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Speedometer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Speedometer.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Start.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Start.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_TransparentDialog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_TransparentDialog.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_Treeview.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_Treeview.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_VScreen.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_VScreen.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_WashingMachine.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_WashingMachine.c</FilePath>
+            </File>
+            <File>
+              <FileName>GUIDEMO_ZoomAndRotate.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\STEMWIN\Demo\GUIDEMO_ZoomAndRotate.c</FilePath>
             </File>
           </Files>
         </Group>

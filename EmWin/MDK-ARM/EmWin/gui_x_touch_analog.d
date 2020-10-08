@@ -1,11 +1,11 @@
-emwin\gui_x_touch_analog.o: ..\STemWin\Confi\GUI_X_Touch_Analog.c
-emwin\gui_x_touch_analog.o: ..\STemWin\Include\GUI.h
-emwin\gui_x_touch_analog.o: ..\STemWin\Include\GUI_ConfDefaults.h
-emwin\gui_x_touch_analog.o: ..\STemWin\Confi\GUIConf.h
-emwin\gui_x_touch_analog.o: ..\STemWin\Include\GUI_Type.h
-emwin\gui_x_touch_analog.o: ..\STemWin\Include\LCD.h
-emwin\gui_x_touch_analog.o: ..\STemWin\Include\Global.h
-emwin\gui_x_touch_analog.o: ..\STemWin\Include\GUI_Version.h
+emwin\gui_x_touch_analog.o: ..\STEMWIN\STemWin\Config\GUI_X_Touch_Analog.c
+emwin\gui_x_touch_analog.o: ..\STEMWIN\STemWin\inc\GUI.h
+emwin\gui_x_touch_analog.o: ..\STEMWIN\STemWin\inc\GUI_ConfDefaults.h
+emwin\gui_x_touch_analog.o: ..\STEMWIN\STemWin\Config\GUIConf.h
+emwin\gui_x_touch_analog.o: ..\STEMWIN\STemWin\inc\GUI_Type.h
+emwin\gui_x_touch_analog.o: ..\STEMWIN\STemWin\inc\LCD.h
+emwin\gui_x_touch_analog.o: ..\STEMWIN\STemWin\inc\Global.h
+emwin\gui_x_touch_analog.o: ..\STEMWIN\STemWin\inc\GUI_Version.h
 emwin\gui_x_touch_analog.o: ..\Touch\touch.h
 emwin\gui_x_touch_analog.o: ../Core/Inc/main.h
 emwin\gui_x_touch_analog.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
@@ -56,3 +56,4 @@ emwin\gui_x_touch_analog.o: ..\Touch\ctiic.h
 emwin\gui_x_touch_analog.o: ..\Touch\gt9147.h
 emwin\gui_x_touch_analog.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 emwin\gui_x_touch_analog.o: ..\Touch\ft5206.h
+emwin\gui_x_touch_analog.o: ../Core/Inc/usart.h
